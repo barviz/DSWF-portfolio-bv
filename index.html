@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="portfolio web de Bárbara Vizgarra">
+  <meta name="author" content="Bárbara Vizgarra">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="/images/image.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <!-- sección de presentación con imágen de fondo -->
+    <section id="presentacion">
+      <h1>Bárbara Vizgarra</h1>
+      <p>Software Developer</p>
+      <img src="images/mi-foto.jpg" alt="Foto presentación">
+    </section>
+
+    <!-- enlace externo a github -->
+    <section class="links">
+       <p>&#128073; Podés ver mis proyectos en <a href="https://github.com/barviz" target="_blank">mi GitHub </a>&#128072;</p>
+    </section>
+
+    <!-- tabla de tecnologías y hobbies -->
+    <section class="tecnologias">
+      <h2>Tecnologías y hobbies</h2>
+      <table>
+        <tr>
+          <th>Conozco</th>
+          <th>Quiero aprender</th>
+          <th>Hobbies</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>JavaScript</td>
+          <td>Leer</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Typescript</td>
+          <td>Caminar</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>React</td>
+          <td>Aprender</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- formulario de contacto sin funcionalidad -->
+    <section id="contacto">
+      <h2>¡Contáctame!</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"><br>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- pie de página -->
+  <footer>
+    <p>&copy; 2025 Bárbara Vizgarra</p>
+  </footer>
+</body>
+</html>
