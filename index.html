@@ -1,53 +1,140 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="portfolio web de Bárbara Vizgarra">
-  <meta name="author" content="Bárbara Vizgarra">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="portfolio web de Bárbara Vizgarra" />
+  <meta name="author" content="Bárbara Vizgarra" />
   <title>Portfolio</title>
-  <link rel="icon" type="image/x-icon" href="/images/image.png">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="/assets/img/image.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#presentacion">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#que-hago">Qué hago</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <main>
+ 
     <!-- sección de presentación con imágen de fondo -->
     <section id="presentacion">
-      <h1>Bárbara Vizgarra</h1>
-      <p>Software Developer</p>
-      <img src="images/mi-foto.jpg" alt="Foto presentación">
+      <div class="overlay">
+        <h1>Bárbara Vizgarra</h1>
+        <p>Software Developer</p>
+        <img src="./assets/img/mi-foto.jpg" alt="Foto presentación" />
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy desarrolladora backend con enfoque en el ecosistema Java y Spring (Spring Boot, Spring MVC, Spring Data JPA,
+        Spring Security).
+        Me entusiasma crear soluciones que realmente ayuden a las personas y mejoren procesos, con un enfoque limpio y
+        eficiente en el código.
+      </p>
+      <p>
+        Aunque mi especialidad es el backend, también me interesa el desarrollo frontend. Tengo conocimientos en HTML,
+        CSS, Bootstrap, JavaScript, Angular y React, lo que me permite colaborar en proyectos integrales de principio a
+        fin.
+      </p>
+      <p>
+        Actualmente estoy aprendiendo tecnologías de nube como AWS y Azure, y me interesa cada vez más el trabajo con
+        infraestructura escalable y automatización.
+      </p>
+      <p>
+        Me considero una persona comprometida, responsable y orientada al aprendizaje continuo. Disfruto trabajar en
+        equipo, compartir conocimientos y sumar desde lo técnico y lo humano para alcanzar objetivos comunes.
+      </p>
     </section>
 
     <!-- enlace externo a github -->
     <section class="links">
-       <p>&#128073; Podés ver mis proyectos en <a href="https://github.com/barviz" target="_blank">mi GitHub </a>&#128072;</p>
+      <p>
+        &#128073; Podés ver mis proyectos en
+        <a href="https://github.com/barviz" target="_blank">mi GitHub </a>&#128072;
+      </p>
     </section>
 
-    <!-- tabla de tecnologías y hobbies -->
-    <section class="tecnologias">
+    <section id="que-hago">
+      <h2>¿Qué hago?</h2>
+      <div class="contenedor-que-hago">
+        <div class="bloque">
+          <h3>Backend</h3>
+          <p>Especializada en Java y el ecosistema Spring (Boot, MVC, Data JPA, Security). Desarrollo APIs REST seguras
+            y mantenibles.</p>
+        </div>
+        <div class="bloque">
+          <h3>Frontend</h3>
+          <p>Conocimientos en HTML, CSS, Bootstrap, JavaScript, Angular y React. Puedo colaborar activamente en el
+            desarrollo de interfaces modernas y responsivas.</p>
+        </div>
+        <div class="bloque">
+          <h3>Bases de Datos</h3>
+          <p>Manejo de bases de datos relacionales como MySQL y PostgreSQL, aplicando buenas prácticas de modelado y
+            consultas SQL eficientes.</p>
+        </div>
+        <div class="bloque">
+          <h3>Nube</h3>
+          <p>En proceso de formación en servicios cloud como AWS y Azure, para desplegar y escalar aplicaciones de forma
+            flexible y segura.</p>
+        </div>
+        <div class="bloque">
+          <h3>Trabajo en equipo</h3>
+          <p>Creo en la comunicación clara, el aprendizaje colaborativo y en construir un ambiente positivo.
+            Comprometida con los objetivos comunes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tecnologias">
       <h2>Tecnologías y hobbies</h2>
-      <table>
-        <tr>
-          <th>Conozco</th>
-          <th>Quiero aprender</th>
-          <th>Hobbies</th>
-        </tr>
-        <tr>
-          <td>HTML</td>
-          <td>JavaScript</td>
-          <td>Leer</td>
-        </tr>
-        <tr>
-          <td>CSS</td>
-          <td>Typescript</td>
-          <td>Caminar</td>
-        </tr>
-        <tr>
-          <td>Java</td>
-          <td>React</td>
-          <td>Aprender</td>
-        </tr>
-      </table>
+      <div class="tabla-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Backend</th>
+              <th>Frontend</th>
+              <th>Bases de Datos</th>
+              <th>Nube</th>
+              <th>Trabajo en equipo</th>
+              <th>Hobbies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java, Spring Boot, Spring MVC, Spring Security</td>
+              <td>HTML, CSS, Bootstrap</td>
+              <td>MySQL</td>
+              <td>Aprendiendo AWS y Azure</td>
+              <td>Scrum, Comunicación, Git</td>
+              <td>Leer, caminar, aprender</td>
+            </tr>
+            <tr>
+              <td>Spring Data JPA, APIs REST</td>
+              <td>JavaScript, Angular, React</td>
+              <td>PostgreSQL</td>
+              <td>GitHub Actions</td>
+              <td>Proyectos colaborativos</td>
+              <td>Escribir, música, fútbol</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <!-- formulario de contacto sin funcionalidad -->
@@ -55,18 +142,18 @@
       <h2>¡Contáctame!</h2>
       <form>
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br>
+        <input type="text" id="nombre" name="nombre" /><br />
 
         <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido"><br>
+        <input type="text" id="apellido" name="apellido" /><br />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br>
+        <input type="email" id="email" name="email" /><br />
 
         <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono"><br>
+        <input type="tel" id="telefono" name="telefono" /><br />
 
-        <button type="submit">Enviar</button>
+        <button type="submit"><i class="fas fa-paper-plane"></i> Enviar</button>
       </form>
     </section>
   </main>
@@ -76,4 +163,5 @@
     <p>&copy; 2025 Bárbara Vizgarra</p>
   </footer>
 </body>
+
 </html>
