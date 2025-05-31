@@ -18,7 +18,7 @@
 
 https://barviz.github.io/DSWF-portfolio-bv/
 
-<img src="assets/img/sample.png" alt="porfolio>"
+<img src="assets/img/sample.png" alt="porfolio>">
 
 
 ### 📫 Contacto
